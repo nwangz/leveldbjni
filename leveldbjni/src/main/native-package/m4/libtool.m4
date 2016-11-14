@@ -1329,6 +1329,9 @@ s390*-*linux*|s390*-*tpf*|sparc*-*linux*)
 	  ppc64-*linux*|powerpc64-*linux*)
 	    LD="${LD-ld} -m elf32ppclinux"
 	    ;;
+          aarch64-*linux*)
+            LD="${LD-ld} -m aarch64linux32"
+            ;;
 	  s390x-*linux*)
 	    LD="${LD-ld} -m elf_s390"
 	    ;;
@@ -1348,6 +1351,9 @@ s390*-*linux*|s390*-*tpf*|sparc*-*linux*)
 	  ppc*-*linux*|powerpc*-*linux*)
 	    LD="${LD-ld} -m elf64ppc"
 	    ;;
+          aarch64-*linux*)
+            LD="${LD-ld} -m aarch64linux"
+            ;;
 	  s390*-*linux*|s390*-*tpf*)
 	    LD="${LD-ld} -m elf64_s390"
 	    ;;
